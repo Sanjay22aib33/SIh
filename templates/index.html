@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Anything 🤖</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+             
+            background-color: #e6f2ff; /* soft blue background color */
+            background-image: url("https://img.freepik.com/free-vector/hand-drawn-back-school-background_23-2149464866.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1714003200&semt=ais");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+  
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 50px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Generate Anything 🤖</h1>
+    <form action="/index" method="post">
+        <label for="input_text">Enter the Topic:</label>
+        <input type="text" id="input_text" name="input_text">
+
+        <label for="no_words">No of Words:</label>
+        <input type="text" id="no_words" name="no_words">
+
+        <label for="blog_style">Writing the response for:</label>
+        <select id="blog_style" name="blog_style">
+            <option value="Professors">Professors</option>
+            <option value="Student">Student</option>
+            <option value="Common People">Common People</option>
+        </select>
+        
+        <input type="submit" value="Generate">
+    </form>
+</body>
+</html>
